@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">Путь от идеи к результату</title>
+  <desc id="desc">Рабочая сцена, где идея превращается в промпт, код и готовый результат</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f5f8ff"/>
+      <stop offset="1" stop-color="#effdf6"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#12b886"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5fbff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#2a344e" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="900" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="720" cy="126" r="116" fill="#fff" opacity=".5"/>
+  <circle cx="150" cy="620" r="138" fill="#dff8ec" opacity=".62"/>
+
+  <g filter="url(#shadow)">
+    <rect x="82" y="116" width="736" height="462" rx="34" fill="#fff"/>
+    <rect x="82" y="116" width="736" height="58" rx="34" fill="#f4f6fb"/>
+    <circle cx="122" cy="146" r="8" fill="#ffb86c"/>
+    <circle cx="150" cy="146" r="8" fill="#12b886"/>
+    <circle cx="178" cy="146" r="8" fill="#2563eb"/>
+    <rect x="236" y="134" width="282" height="22" rx="11" fill="#fff" stroke="#dbe4f2"/>
+    <rect x="266" y="142" width="162" height="7" rx="3.5" fill="#a9b8ce"/>
+  </g>
+
+  <g>
+    <rect x="118" y="212" width="214" height="220" rx="26" fill="url(#screen)" stroke="#e5edf7"/>
+    <rect x="148" y="244" width="78" height="14" rx="7" fill="#172033"/>
+    <rect x="148" y="294" width="136" height="34" rx="16" fill="#eef4ff"/>
+    <rect x="176" y="346" width="112" height="34" rx="16" fill="#e8fbf3"/>
+    <rect x="148" y="392" width="126" height="10" rx="5" fill="#d4deeb"/>
+    <circle cx="288" cy="258" r="16" fill="#e8f0ff"/>
+    <path d="M158 310h96M186 362h76" stroke="#b9c8dd" stroke-width="7" stroke-linecap="round"/>
+    <text x="148" y="470" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#2563eb">идея + вопросы</text>
+  </g>
+
+  <g>
+    <rect x="360" y="184" width="238" height="276" rx="28" fill="#111827"/>
+    <rect x="392" y="224" width="118" height="13" rx="6.5" fill="#eaf1ff"/>
+    <rect x="392" y="274" width="168" height="11" rx="5.5" fill="#7dd3fc"/>
+    <rect x="418" y="308" width="132" height="11" rx="5.5" fill="#86efac"/>
+    <rect x="418" y="342" width="156" height="11" rx="5.5" fill="#bfdbfe"/>
+    <rect x="392" y="390" width="96" height="32" rx="16" fill="url(#blue)"/>
+    <text x="392" y="500" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#2563eb">промпт → код</text>
+  </g>
+
+  <g>
+    <rect x="630" y="220" width="156" height="210" rx="24" fill="url(#screen)" stroke="#e5edf7"/>
+    <rect x="654" y="250" width="76" height="12" rx="6" fill="#172033"/>
+    <rect x="654" y="300" width="96" height="10" rx="5" fill="#d3ddeb"/>
+    <rect x="654" y="326" width="72" height="10" rx="5" fill="#e0e7f2"/>
+    <rect x="654" y="374" width="70" height="28" rx="14" fill="url(#blue)"/>
+    <rect x="736" y="374" width="32" height="28" rx="14" fill="#eef4ff"/>
+    <path d="M666 352l32-34 24 23 30-37" fill="none" stroke="#12b886" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+    <text x="638" y="470" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#2563eb">готовый результат</text>
+  </g>
+
+  <path d="M332 322 C 344 298, 352 288, 360 282" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M598 320 C 614 314, 622 308, 630 302" fill="none" stroke="#12b886" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="346" cy="300" r="10" fill="#2563eb"/>
+  <circle cx="616" cy="310" r="10" fill="#12b886"/>
+
+  <g transform="translate(130 604)">
+    <rect width="640" height="62" rx="31" fill="#ffffff" opacity=".86" stroke="#dfe8f5"/>
+    <rect x="28" y="18" width="86" height="26" rx="13" fill="#eef4ff"/>
+    <rect x="138" y="18" width="118" height="26" rx="13" fill="#edfdf5"/>
+    <rect x="280" y="18" width="90" height="26" rx="13" fill="#eef4ff"/>
+    <rect x="394" y="18" width="92" height="26" rx="13" fill="#edfdf5"/>
+    <rect x="510" y="18" width="90" height="26" rx="13" fill="#eef4ff"/>
+    <text x="48" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#2563eb">идея</text>
+    <text x="158" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">промпт</text>
+    <text x="308" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#2563eb">код</text>
+    <text x="414" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">проверка</text>
+    <text x="532" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#2563eb">релиз</text>
+  </g>
+</svg>

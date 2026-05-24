@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Советы по работе с ChatGPT + Codex</title>
+    <meta name="description" content="Практичный гайд о том, как использовать ChatGPT и Codex вместе: от идеи до готового сайта, бота, PDF или другого проекта.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="На главную">
+        <img class="brand-avatar" src="../assets/img/channel-avatar.jpeg" alt="Аватар Telegram-канала Давай попроще, Руслан">
+        <span>Давай попроще, Руслан</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="../index.html#guides">Гайды</a>
+        <a href="https://t.me/homepm" target="_blank" rel="noopener">Telegram</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="guide-hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Практичный гайд</p>
+          <h1>Советы по работе с ChatGPT + Codex</h1>
+          <p class="lead">Небольшой практичный гайд о том, как использовать ChatGPT и Codex вместе: от идеи до готового сайта, бота, PDF или другого проекта.</p>
+          <a class="button primary" href="#tips">Перейти к советам</a>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="../assets/img/flow-hero.svg" alt="Схема, где идея проходит через диалог, код и превращается в готовый результат">
+        </div>
+      </section>
+
+      <section class="section workflow reveal" aria-labelledby="workflow-title">
+        <p class="eyebrow">Моя базовая схема</p>
+        <h2 id="workflow-title">От мысли до рабочей версии</h2>
+        <div class="workflow-chain">
+          <span>Идея</span>
+          <span>Обсуждение в ChatGPT</span>
+          <span>Промпт для Codex</span>
+          <span>Код / страница / бот / PDF</span>
+          <span>Проверка</span>
+          <span>Доработки</span>
+        </div>
+      </section>
+
+      <section class="section tips" id="tips" aria-label="Советы">
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">01</span>
+            <h2>Сначала ChatGPT, потом Codex</h2>
+            <p>Сначала я обсуждаю идею в ChatGPT: что хочу получить, для кого это нужно, какой результат будет считаться хорошим.</p>
+            <p>Потом уточняю детали и прошу собрать промпт для Codex. Так Codex не начинает делать что-то слишком рано и не уходит в сторону.</p>
+            <p>Хороший промпт экономит время на переделках. Особенно когда задача не на пять минут.</p>
+            <p>P.S. Это актуально и для других инструментов, не только для Codex, особенно там, где надо экономить токены.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Опиши идею в ChatGPT, попроси задать уточняющие вопросы, а потом попроси финальный промпт для Codex.</span></div>
+          </div>
+          <img src="../assets/img/mock-chat-to-code.svg" alt="Мокап окна с диалогом и готовым промптом для разработки">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">02</span>
+            <h2>Делать маленькими шагами</h2>
+            <p>Не нужно сразу просить собрать «аналог Авито». Большие задачи почти всегда лучше разбивать на понятные куски.</p>
+            <p>Например: главная страница, карточка товара, форма, авторизация, админка. Так проще контролировать результат.</p>
+            <p>И если что-то пошло не туда, исправлять нужно небольшой участок, а не весь проект целиком.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Проси Codex делать одну логичную часть за раз: экран, блок, форму, сценарий или отдельный файл.</span></div>
+          </div>
+          <img src="../assets/img/mock-steps.svg" alt="Мокап доски с несколькими небольшими этапами проекта">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">03</span>
+            <h2>Просить объяснить изменения после каждого шага</h2>
+            <p>После каждого изменения полезно попросить Codex коротко объяснить, что он поменял и зачем.</p>
+            <p>Это помогает оставаться в контексте, понимать структуру проекта и не пропускать важные детали.</p>
+            <p>Через пару итераций такая привычка сильно снижает ощущение, что проект живёт своей жизнью.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Добавь в промпт фразу: «После изменений объясни, какие файлы ты поменял и почему».</span></div>
+          </div>
+          <img src="../assets/img/mock-files.svg" alt="Мокап списка файлов проекта с короткими заметками об изменениях">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">04</span>
+            <h2>Проверять, к какой папке и репозиторию подключен Codex</h2>
+            <p>Это выстраданный совет. Перед началом работы лучше проверить, куда именно подключен Codex в активном чате.</p>
+            <p>Иначе можно случайно попросить его поменять файлы не в той папке или не в том репозитории. Особенно неприятно, если рядом лежит несколько похожих проектов.</p>
+            <p>Если работаешь с git, в новом чате можно просто кинуть ссылку на репозиторий и сказать: «Подключись к этому репозиторию».</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Перед правками проверь текущую папку, remote и название репозитория. Если есть сомнения, попроси Codex явно подтвердить, к чему он подключен.</span></div>
+          </div>
+          <img src="../assets/img/mock-repo-connection.svg" alt="Скрин, где Codex подтверждает подключение локальной папки к репозиторию kutneev/guides">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">05</span>
+            <h2>Одну задачу пробовать в ChatGPT и Codex</h2>
+            <p>Иногда одна и та же задача лучше получается в разных инструментах.</p>
+            <p>Например, часто картинки лучше получаются у Codex, хотя это совсем неочевидно и просто надо пробовать.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Если результат не нравится, дай ту же задачу другому инструменту и сравни, что получилось полезнее.</span></div>
+          </div>
+          <img src="../assets/img/mock-compare.svg" alt="Мокап сравнения двух вариантов решения одной задачи">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">06</span>
+            <h2>Для лендингов: ChatGPT + Codex + GitHub Pages</h2>
+            <p>Для простых сайтов и лендингов хорошо работает такая связка: в ChatGPT описываю идею сайта, аудиторию, блоки и стиль.</p>
+            <p>Потом прошу промпт для Codex. Codex собирает HTML, CSS и JS, а GitHub Pages позволяет быстро выложить результат.</p>
+            <p>Это хороший формат, когда нужно быстро проверить идею, показать страницу или собрать понятный материал.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>В промпте сразу укажи, что сайт будет размещаться на GitHub Pages.</span></div>
+          </div>
+          <img src="../assets/img/mock-pages.svg" alt="Мокап предпросмотра сайта и панели публикации статической страницы">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">07</span>
+            <h2>Для ботов: ChatGPT + Codex + Railway</h2>
+            <p>Для Telegram-ботов можно использовать похожую схему. Сначала в ChatGPT описать, что должен делать бот и какие команды нужны.</p>
+            <p>Отдельно полезно проговорить, где будет храниться логика, какие переменные окружения понадобятся и как бот будет запускаться.</p>
+            <p>Railway удобно использовать для хостинга, особенно когда хочется быстро перейти от кода к работающему сервису.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Сразу укажи, что бот будет запускаться на Railway, и попроси подготовить структуру проекта под деплой.</span></div>
+          </div>
+          <img src="../assets/img/mock-bot-hosting.svg" alt="Мокап настроек хостинга и статуса работающего бота">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">08</span>
+            <h2>Codex хорошо собирает сложные PDF</h2>
+            <p>Если нужен красивый PDF, удобно сначала собрать HTML-версию документа, а потом конвертировать её в PDF.</p>
+            <p>Так проще управлять версткой, стилями, блоками, таблицами и визуальной структурой.</p>
+            <p>Плюс HTML легче проверить глазами: что уехало, где тесно, какой блок просит больше воздуха.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Сначала попроси ChatGPT подготовить структуру PDF и промпт, потом отдай это в Codex.</span></div>
+          </div>
+          <img src="../assets/img/mock-pdf.svg" alt="Мокап PDF-превью с аккуратными блоками и таблицей">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">09</span>
+            <h2>Для сложных задач включать высокий интеллект</h2>
+            <p>Когда задача важная и сложная, лучше не экономить на качестве рассуждения.</p>
+            <p>Например, при проектировании архитектуры сайта или приложения высокий режим помогает лучше продумать структуру и зависимости.</p>
+            <p>Он особенно полезен там, где ошибка в начале потом превращается в длинную цепочку переделок.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Используй повышенный режим для архитектуры, сложной логики, рефакторинга и больших решений.</span></div>
+          </div>
+          <img src="../assets/img/mock-architecture.svg" alt="Мокап архитектурной схемы проекта с несколькими связанными модулями">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">10</span>
+            <h2>Использовать комментарии в предпросмотре Codex</h2>
+            <p>В Codex в правом предпросмотре можно оставлять комментарии к конкретным местам интерфейса.</p>
+            <p>Комментарий можно сразу отправить в работу, если это одна понятная правка. А можно нажать «Добавить», чтобы он просто попал в поле сообщения.</p>
+            <p>Так удобно собрать несколько замечаний, а потом одним скоупом попросить Codex поправить всё списком. Особенно для визуальных правок: отступы, размеры, текст, поведение кнопок.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Открой предпросмотр, отметь проблемные места комментариями. Срочную правку отправь сразу, остальные добавь в сообщение и попроси исправить весь список одним заходом.</span></div>
+          </div>
+          <img src="../assets/img/codex-comment-preview.svg" alt="Скрин предпросмотра Codex с выделенным элементом и комментарием">
+        </article>
+
+        <article class="tip-card reveal">
+          <div class="tip-content">
+            <span class="tip-number">11</span>
+            <h2>Активно кидать скриншоты, когда непонятно, куда нажимать</h2>
+            <p>Когда настраиваешь что-то по инструкции и застрял в интерфейсе, не нужно мучиться и угадывать.</p>
+            <p>Можно просто отправить скриншот и спросить: «Куда нажимать?» Это часто быстрее, чем перечитывать документацию.</p>
+            <p>Особенно помогает с GitHub, Railway, настройками доменов, токенами и деплоем.</p>
+            <div class="apply-box"><strong>Как применить</strong><span>Сделай скрин текущего экрана и попроси объяснить следующий шаг простыми словами.</span></div>
+          </div>
+          <img src="../assets/img/mock-screenshot-help.svg" alt="Мокап интерфейса с выделенной кнопкой и вопросом о следующем шаге">
+        </article>
+      </section>
+
+      <section class="section prompt-formula reveal" aria-labelledby="prompt-title">
+        <div>
+          <p class="eyebrow">Готовая формула промпта</p>
+          <h2 id="prompt-title">Можно брать и адаптировать под себя</h2>
+        </div>
+        <pre><code>Я хочу сделать [что именно].
+Цель проекта — [цель].
+Аудитория — [для кого].
+Планирую размещать/запускать это на [GitHub Pages / Railway / другое].
+Сначала предложи структуру проекта, затем собери минимальную рабочую версию.
+После изменений объясни, какие файлы ты поменял и почему.</code></pre>
+      </section>
+
+      <section class="section telegram-band reveal" aria-labelledby="guide-telegram-title">
+        <div>
+          <p class="eyebrow">Telegram</p>
+          <h2 id="guide-telegram-title">Больше простых разборов — в Telegram</h2>
+          <p>Я пишу про продуктовый подход, удалёнку, AI-инструменты и способы делать рабочие штуки без лишнего усложнения.</p>
+        </div>
+        <a class="button primary" href="https://t.me/homepm" target="_blank" rel="noopener">Подписаться на @homepm</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Давай попроще, Руслан</strong>
+        <p>Гайды, заметки и разборы про продукты, работу и AI-инструменты.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/homepm" target="_blank" rel="noopener">Telegram</a>
+        <span>© <span data-year></span></span>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Наверх">↑</button>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

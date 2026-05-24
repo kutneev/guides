@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-labelledby="title desc">
+  <title id="title">Скрин комментария в предпросмотре</title>
+  <desc id="desc">Голубой фрагмент предпросмотра с выделенным интерфейсом, маркером комментария и двумя карточками справа</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d9eaff"/>
+      <stop offset="1" stop-color="#cfe6ff"/>
+    </linearGradient>
+    <linearGradient id="ghost" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#ddebff"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1f6ff2"/>
+      <stop offset="1" stop-color="#2f80ed"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="517" height="417" rx="28" fill="url(#panel)" stroke="#1677ff" stroke-width="3"/>
+  <g opacity=".58">
+    <rect x="48" y="46" width="236" height="258" rx="26" fill="url(#ghost)"/>
+    <rect x="72" y="84" width="150" height="16" rx="8" fill="#0f2138"/>
+    <rect x="72" y="138" width="214" height="11" rx="5.5" fill="#9fc2ea"/>
+    <rect x="72" y="166" width="174" height="11" rx="5.5" fill="#b6d0ed"/>
+    <rect x="72" y="232" width="92" height="34" rx="17" fill="url(#button)"/>
+  </g>
+  <rect x="300" y="110" width="148" height="74" rx="18" fill="#d3e8ff" stroke="#8bbcf9"/>
+  <rect x="326" y="138" width="82" height="9" rx="4.5" fill="#99bee8"/>
+  <rect x="276" y="214" width="166" height="74" rx="18" fill="#d2ebf8" stroke="#7fd5cb"/>
+  <rect x="304" y="242" width="96" height="9" rx="4.5" fill="#9abfe7"/>
+  <rect x="72" y="136" width="214" height="14" rx="7" fill="#a3c7ef"/>
+  <circle cx="240" cy="143" r="16" fill="#1a7cff" stroke="#fff" stroke-width="4"/>
+  <text x="240" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">1</text>
+</svg>
